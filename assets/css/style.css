@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+
+body {
+    background-color: #E5E5E5;
+    margin: 0;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: #555;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+h4 {
+    margin: 10px 0;
+}
+
+header {
+    height: 64px;
+    background-color: #fff;
+}
+
+.header--area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header--left img {
+    height: 30px;
+}
+
+.header--right {
+    display: flex;
+    align-items: center;
+}
+
+.header--username span {
+    font-weight: bold;
+}
+
+.header--avatar {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #e5e5e5;
+    border-radius: 3px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.header--avatar:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.content-area {
+    padding: 20px 0;
+}
+
+.content--search form {
+    display: flex;
+}
+
+.content--search input {
+    padding: 8px 15px;
+    border: none;
+    outline: 0;
+    width: 100%;
+    max-width: 250px;
+    font-style: italic;
+}
+
+
+.content--search button {
+    border: 0;
+    background: transparent;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+.content--search button img {
+    width: 16px;
+    height: 16px;
+}
+
+.heroes--table {
+    border-collapse: separate;
+    border-spacing: 0 .5em;
+    margin: 25px 0;
+    width: 100%;
+}
+
+.heroes--table tr {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+}
+
+.heroes--table thead tr {
+    color: #8e8e8e;
+    text-align: left;
+    font-weight: normal;
+    font-size: .8rem;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.heroes--table th,
+.heroes--table td {
+    padding: 12px 15px;
+}
