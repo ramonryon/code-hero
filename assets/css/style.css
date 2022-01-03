@@ -12,6 +12,7 @@ body {
     margin: auto;
 }
 
+
 h1 {
     font-size: 2rem;
     margin: 10px 0;
@@ -77,6 +78,7 @@ header {
 
 .content-area {
     padding: 40px 0;
+    min-height: 80vh;
 }
 
 .content--search form {
@@ -152,9 +154,6 @@ header {
 footer {
     background-color: #fff;
     padding: 30px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
 }
 
 footer .heroes--pagination {
@@ -179,4 +178,61 @@ footer .heroes--pagination ul li {
 footer .heroes--pagination a .active {
     background-color: #167ABC;
     color: #fff;
+}
+
+@media(min-width: 769px) and (max-width: 1140px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 480px) {
+    .phone--not-visible {
+        display: none;
+    }
+
+    .container {
+        max-width: 320px;
+    }
+
+    .header--left img {
+        height: 20px;
+    }
+
+    .header--right .header--username {
+        font-size: .8rem;
+        text-align: right;
+    }
+
+    .header--right .header--username span {
+        display: block;
+    }
+
+    .header--right .header--avatar {
+        padding: 8px;
+        margin-left: 12px;
+    }
+
+    .content-area {
+        padding: 15px;
+    }
+
+    .content--search {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .content--search h1 {
+        font-size: 1.5rem;
+    }
+
+    .content--search input {
+        max-width: 100%;
+    }
+
+    .content--search button {
+        margin-left: -25px;
+    }
 }
